@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<LogPath>d:/MonitorNPRCH/Logs</LogPath> <!--Путь к лог файлам-->
+  <DataPath>d:/MonitorNPRCH/GenData</DataPath><!--Путь к сгенерированным файлам-->
+  <PointsFile>Points.xml</PointsFile> <!--Путь файлу со списком точек-->
+	<HoursUTC>5</HoursUTC> <!--Сдвиг по времени UTC-->
+  <DepthFirstRun>24</DepthFirstRun> <!--Сколько часов считывать вглубь при запуске программы-->
+  <DepthRead>4</DepthRead> <!--Сколько часов считывать вглубь каждый час-->
+  <SMTPServer>mx-votges-021</SMTPServer> <!--SMTP сервер-->
+  <SMTPFrom>ChekunovaMV@votges.rushydro.ru</SMTPFrom> <!--От кого отправлять письмо-->
+  <SMTPUser>ChekunovaMV</SMTPUser> <!--Пользователь-->
+  <SMTPPassword>rJ320204</SMTPPassword> <!--Пароль-->
+  <SMTPPort>25</SMTPPort> <!--Порт-->
+  <SMTPDomain>corp</SMTPDomain> <!--Домен-->
+  <SMTPErrorTo>ChekunovaMV@votges.rushydro.ru;</SMTPErrorTo> <!--Кому отправлять отчет об ошибках-->
+  <SendErrorMail>true</SendErrorMail> <!--Отправлять отчет об ошибках-->
+  <FTPActive>true</FTPActive> <!--Активный режим FTP-->
+  <FTPServer>10.7.3.6</FTPServer> <!--Адрес FTP сервера-->
+  <FTPPort>21</FTPPort> <!--Порт 21-->
+  <FTPUser>nprch_i_votges</FTPUser> <!--Пользователь FTP-->
+  <FTPPassword>V0t#1Nt</FTPPassword> <!--Пароль FTP-->
+</Settings>	
