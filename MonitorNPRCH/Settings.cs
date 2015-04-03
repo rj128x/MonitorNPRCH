@@ -27,7 +27,7 @@ namespace MonitorNPRCH
         /// </summary>
         [System.Xml.Serialization.XmlIgnoreAttribute]
         public Dictionary<string, string> PointsByDescr { get; set; }
-
+        
         /// <summary>
         /// Создание массивов
         /// </summary>
@@ -160,11 +160,22 @@ namespace MonitorNPRCH
         /// Пароль ftp
         /// </summary>
         public string FTPPassword { get; set; }
-                
+        /// <summary>
+        /// Список активных ГА (разделен ;)
+        /// </summary>
+        public string ActiveGA { get; set; }
+
         /// <summary>
         /// Настройки точек
         /// </summary>
         public PointsSettings Points;
+
+        /// <summary>
+        /// Список активных ГА для работы
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnoreAttribute]
+        public List<int> ActiveGAList { get; set; }
+
 
         /// <summary>
         /// Ссылка на единственный объект настроек
@@ -196,6 +207,13 @@ namespace MonitorNPRCH
             //Создание директории выходных файлов
             if (!Directory.Exists(settings.DataPath)){
                 Directory.CreateDirectory(settings.DataPath);
+            }
+
+            char[] sep={';'};
+            string[] arr = settings.ActiveGA.Split(sep);
+            settings.ActiveGAList = new List<int>();
+            foreach (string str in arr) {
+                settings.ActiveGAList.Add(Int32.Parse(str));
             }
             Settings.settings = settings;            
         }

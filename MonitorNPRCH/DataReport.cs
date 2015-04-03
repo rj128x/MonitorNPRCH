@@ -52,7 +52,7 @@ namespace MonitorNPRCH
 		{
 			Logger.Info("Чтение данных");
 			bool isOk = true;
-            /*
+            
             //Создание подключения
 			OleDbConnection connection = new OleDbConnection("Provider=Ovation Process Historian OLE DB Provider; Data Source=Drop160_n6; RetrievalMode=MODE_LATEST;");
 			OleDbDataReader reader = null;
@@ -111,7 +111,7 @@ namespace MonitorNPRCH
 					Logger.Info("Ошибка при закрытии подключения");
 					Logger.Info(e.ToString());
 				}
-			}*/
+			}
 			Logger.Info("Чтение данных завершено ok:" + isOk);
 			return isOk;
 		}
@@ -135,7 +135,7 @@ namespace MonitorNPRCH
         /// </summary>
 		public void CreateReportFiles()
 		{
-			for (int ga = 1; ga <= 10; ga++) {
+			foreach (int ga in Settings.single.ActiveGAList) {
 				string fileName = getFileName(DateStart,ga,"txt");
 				Logger.Info("Создание файла отчета " + fileName);
 				FileInfo fi = new FileInfo(fileName);

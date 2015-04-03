@@ -114,7 +114,7 @@ namespace MonitorNPRCH {
         /// <returns></returns>
 		protected bool ReportsFound(DateTime dt) {
 			bool ok = true;
-			for (int ga = 1; ga <= 10; ga++) {
+            foreach (int ga in Settings.single.ActiveGAList) {
 				if (!File.Exists(DataReport.getFileName(dt, ga,"txt.zip")))
 					ok = false;
 			}
@@ -148,7 +148,7 @@ namespace MonitorNPRCH {
 							else {//Иначе попытка повторной отправки
 								Logger.Info("Повторная отправка отчета");
 								bool sent = true;
-								for (int ga = 1; ga <= 10; ga++) {
+                                foreach (int ga in Settings.single.ActiveGAList) {
 									bool ok = FTPClass.SendFile(DataReport.getFileName(dt,ga,"txt.zip"));
 									if (!ok)
 										sent = false;
@@ -181,7 +181,7 @@ namespace MonitorNPRCH {
 					if (ok) {//Если данные успешно считаны
 						rep.CreateReportFiles();//Создаем файлы на диске
 						bool sent = true;
-						for (int ga = 1; ga <= 10; ga++) {//отправляем файлы на ftp
+                        foreach (int ga in Settings.single.ActiveGAList) {//отправляем файлы на ftp
 							bool log = FTPClass.SendFile(DataReport.getFileName(dt, ga,"txt.zip"));
 							if (!log)
 								sent = false;

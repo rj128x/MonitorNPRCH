@@ -16,7 +16,7 @@ namespace MonitorNPRCH {
         /// <param name="dateEnd">Дата окончания</param>
         public static void checkData(DateTime dateStart, DateTime dateEnd) {
             bool send=true;
-            for (int ga = 1; ga <= 10; ga++) {
+            foreach (int ga in Settings.single.ActiveGAList) {
                 bool sendGA = true;
                 DateTime date = dateStart.AddHours(0);
                 while (date < dateEnd) {
