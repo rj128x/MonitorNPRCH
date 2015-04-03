@@ -10,16 +10,27 @@ using Ionic.Zip;
 
 namespace MonitorNPRCH
 {
+    /// <summary>
+    /// Класс отчета
+    /// </summary>
 	public class DataReport
 	{
+        /// <summary>
+        /// Дата начала
+        /// </summary>
 		public DateTime DateStart { get; protected set; }
+        /// <summary>
+        /// Дата окончания
+        /// </summary>
 		public DateTime DateEnd { get; protected set; }
+        /// <summary>
+        /// Считанные данные
+        /// </summary>
 		public Dictionary<DateTime, Dictionary<string, double>> Data;
-		protected Random rand = new Random();
 
 
         /// <summary>
-        /// Класс отчета.
+        /// Конструктор
         /// </summary>
         /// <param name="dateStart">Дата начала</param>
         /// <param name="dateEnd">Дата конца</param>
