@@ -6,18 +6,27 @@ using System.Text;
 
 namespace MonitorNPRCH
 {
+    /// <summary>
+    /// Класс для отправки почты
+    /// </summary>
     public class MailClass
     {
-        
+       /// <summary>
+       /// Отправляет почту
+       /// </summary>
+       /// <param name="subject">Тема сообщения</param>
+       /// <param name="message">Сообщение</param>
+       /// <returns>true, если почта отправлена</returns>
+ 
         public static bool SendTextMail(string subject, string message) {
             try {
-                if (!Settings.single.SendErrorMail)
+                if (!Settings.single.SendErrorMail)//Если в настройках отключена отправка, возврат
                     return true;
                 System.Net.Mail.MailMessage mess = new System.Net.Mail.MailMessage();
 
                 mess.From = new MailAddress(Settings.single.SMTPFrom);
                 mess.Subject = subject; mess.Body = message;
-                char[] sep = { ';' };
+                char[] sep = { ';' };//Заполняем список адресов
                 string[] addrs = Settings.single.SMTPErrorTo.Split(sep);
                 foreach (string mail in addrs) {
                     if (mail.Length > 0) {
@@ -30,7 +39,7 @@ namespace MonitorNPRCH
                 mess.IsBodyHtml = true;
                 System.Net.Mail.SmtpClient client = new System.Net.Mail.SmtpClient(Settings.single.SMTPServer, Settings.single.SMTPPort);
                 client.EnableSsl = true;
-                if (Settings.single.SMTPUser.Length > 0) {
+                if (Settings.single.SMTPUser.Length > 0) {//Заполняем права
                     client.UseDefaultCredentials = false;                    
                     client.Credentials = new System.Net.NetworkCredential(Settings.single.SMTPUser, Settings.single.SMTPPassword, Settings.single.SMTPDomain);
                 }
