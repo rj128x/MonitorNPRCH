@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PointsSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Points>
+    <PointInfo Name="11VT_GG01AP-040.UNIT@MCR" Descr="GA1 PZad"/>
+    <PointInfo Name="11VT_GG02AP-040.UNIT@MCR" Descr="GA2 PZad"/>
+    <PointInfo Name="11VT_GG03AP-040.UNIT@MCR" Descr="GA3 PZad"/>
+    <PointInfo Name="11VT_GG04AP-040.UNIT@MCR" Descr="GA4 PZad"/>
+    <PointInfo Name="11VT_GG05AP-040.UNIT@MCR" Descr="GA5 PZad"/>
+    <PointInfo Name="11VT_GG06AP-040.UNIT@MCR" Descr="GA6 PZad"/>
+    <PointInfo Name="11VT_GG07AP-040.UNIT@MCR" Descr="GA7 PZad"/>
+    <PointInfo Name="11VT_GG08AP-040.UNIT@MCR" Descr="GA8 PZad"/>
+    <PointInfo Name="11VT_GG09AP-040.UNIT@MCR" Descr="GA9 PZad"/>
+    <PointInfo Name="11VT_GG10AP-040.UNIT@MCR" Descr="GA10 PZad"/>
+
+    <PointInfo Name="01VT_LP02AO-03.UNIT01@BLOCK1" Descr="GA1 P"/>
+    <PointInfo Name="02VT_LP02AO-03.UNIT01@BLOCK1" Descr="GA2 P"/>
+    <PointInfo Name="03VT_LP02AO-03.UNIT03@BLOCK2" Descr="GA3 P"/>
+    <PointInfo Name="04VT_LP02AO-03.UNIT03@BLOCK2" Descr="GA4 P"/>
+    <PointInfo Name="05VT_LP02AO-03.UNIT05@BLOCK3" Descr="GA5 P"/>
+    <PointInfo Name="06VT_LP02AO-03.UNIT05@BLOCK3" Descr="GA6 P"/>
+    <PointInfo Name="07VT_LP02AO-03.UNIT07@BLOCK4" Descr="GA7 P"/>
+    <PointInfo Name="08VT_LP02AO-03.UNIT07@BLOCK4" Descr="GA8 P"/>
+    <PointInfo Name="09VT_LP02AO-03.UNIT09@BLOCK5" Descr="GA9 P"/>
+    <PointInfo Name="10VT_LP02AO-03.UNIT09@BLOCK5" Descr="GA10 P"/>
+
+    <PointInfo Name="01VT_GC00A-105.UNIT01@BLOCK1" Descr="GA1 F"/>
+    <PointInfo Name="02VT_GC00A-105.UNIT01@BLOCK1" Descr="GA2 F"/>
+    <PointInfo Name="03VT_GC00A-105.UNIT03@BLOCK2" Descr="GA3 F"/>
+    <PointInfo Name="04VT_GC00A-105.UNIT03@BLOCK2" Descr="GA4 F"/>
+    <PointInfo Name="05VT_GC00A-105.UNIT05@BLOCK3" Descr="GA5 F"/>
+    <PointInfo Name="06VT_GC00A-105.UNIT05@BLOCK3" Descr="GA6 F"/>
+    <PointInfo Name="07VT_GC00A-105.UNIT07@BLOCK4" Descr="GA7 F"/>
+    <PointInfo Name="08VT_GC00A-105.UNIT07@BLOCK4" Descr="GA8 F"/>
+    <PointInfo Name="09VT_GC00A-105.UNIT09@BLOCK5" Descr="GA9 F"/>
+    <PointInfo Name="10VT_GC00A-105.UNIT09@BLOCK5" Descr="GA10 F"/>
+  </Points>
+</PointsSettings>
