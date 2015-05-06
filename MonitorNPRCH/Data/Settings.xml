@@ -5,7 +5,7 @@
   <DataPath>d:/MonitorNPRCH/GenData</DataPath><!--Путь к сгенерированным файлам-->
   <PointsFile>Points.xml</PointsFile> <!--Путь файлу со списком точек-->
 	<HoursUTC>5</HoursUTC> <!--Сдвиг по времени UTC-->
-  <ActiveGA>1;2;3;4;5;6;7;8;9;10;</ActiveGA> <!-- Список ГА учавствующих в НПРЧ-->
+  <ActiveGA>10;</ActiveGA> <!-- Список ГА учавствующих в НПРЧ-->
   <DepthFirstRun>24</DepthFirstRun> <!--Сколько часов считывать вглубь при запуске программы-->
   <DepthRead>4</DepthRead> <!--Сколько часов считывать вглубь каждый час-->
   <SMTPServer>mx-votges-021</SMTPServer> <!--SMTP сервер-->
@@ -17,7 +17,7 @@
   <SMTPErrorTo>ChekunovaMV@votges.rushydro.ru;</SMTPErrorTo> <!--Кому отправлять отчет об ошибках-->
   <SendErrorMail>true</SendErrorMail> <!--Отправлять отчет об ошибках-->
   <FTPActive>true</FTPActive> <!--Активный режим FTP-->
-  <FTPServer>10.7.3.6</FTPServer> <!--Адрес FTP сервера-->
+  <FTPServer>10.7.3.14</FTPServer> <!--Адрес FTP сервера-->
   <FTPPort>21</FTPPort> <!--Порт 21-->
   <FTPUser>nprch_i_votges</FTPUser> <!--Пользователь FTP-->
   <FTPPassword>V0t#1Nt</FTPPassword> <!--Пароль FTP-->
